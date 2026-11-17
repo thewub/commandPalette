@@ -210,12 +210,12 @@ $( document ).ready( function() {
 					// make these work with Ctrl for Windows?
 
 					// Cmd + K
-					if ( ( e.metaKey || e.ctrlKey ) && e.keyCode === 75 ) {
+					if ( ( e.metaKey || e.ctrlKey ) && e.key === 'k' ) {
 						this.showCommandPalette();
 					}
 
 					// Cmd + Shift + P	
-					if ( ( e.metaKey || e.ctrlKey ) && e.shiftKey && e.keyCode === 80 ) {
+					if ( ( e.metaKey || e.ctrlKey ) && e.shiftKey && e.key === 'p' ) {
 						this.showCommandPalette();
 					}
 				});
