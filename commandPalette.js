@@ -47,6 +47,17 @@ $( document ).ready( function() {
 			}
 		} );
 
+		let helpLink = document.querySelector( 'a.mw-helplink' );
+		if ( helpLink ) {
+			let item = {
+				label: helpLink.textContent.trim(),
+				description: 'Help about this page',
+				value: helpLink,
+				priority: 1
+			};
+			commandItems.push( item );
+		}
+
 		commandItems.sort( ( a, b ) => b.priority - a.priority ); // sort by priority
 
 		
